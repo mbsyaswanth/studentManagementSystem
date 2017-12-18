@@ -1,0 +1,27 @@
+{
+  "name": "student_management",
+  "version": "1.0.0",
+  "description": "a project to manage student details and be able to add,update,login register and other features. it will also track student marks,grade,and different activities like programs attended, skill sets, achievements...",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbsyaswanth/studentManagementSystem.git"
+  },
+  "author": "M B S Yaswanth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbsyaswanth/studentManagementSystem/issues"
+  },
+  "homepage": "https://github.com/mbsyaswanth/studentManagementSystem#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "expressjs": "^1.0.1",
+    "method-override": "^2.3.10",
+    "mongojs": "^2.4.1",
+    "mongoose": "^4.13.7"
+  }
+}

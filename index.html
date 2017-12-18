@@ -1,0 +1,30 @@
+
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <title>index</title>
+    <link rel="stylesheet" href="register.css" type="text/css">
+
+  </head>
+  <body ng-app="myApp" ng-controller="MainController">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="login">Login</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+<div ng-view>
+
+</div>
+
+  </body>
+  <script src="angular.min.js"></script>
+  <script src="angular-route.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</html>
