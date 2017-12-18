@@ -1,0 +1,3 @@
+# studentManagementSystem
+
+Trying to build a MEAN stack application from scratch...
