@@ -1,3 +1,5 @@
+console.log("app.js file loaded");
+
 var app = angular.module('myApp', ['ngRoute']);
 app.config(function($routeProvider) {
 	$routeProvider.when('/', {
@@ -16,8 +18,8 @@ app.config(function($routeProvider) {
 		templateUrl: 'resources/updateEmployee.html',
 	});
 });
-app.controller("MainController",['$scope',function($scope){
-	
-	
-	
-}]);
+//app.controller("MainController",['$scope',function($scope){
+
+
+
+//}]);
