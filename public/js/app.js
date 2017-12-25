@@ -3,15 +3,17 @@ console.log("app.js file loaded");
 var app = angular.module('myApp', ['ngRoute']);
 app.config(function($routeProvider) {
 	$routeProvider.when('/', {
-		templateUrl: 'login.html'
+		templateUrl: 'Resources/home.html'
+	}).when('/home', {
+		templateUrl: 'Resources/home.html'
 	}).when('/login', {
-		templateUrl: 'login.html'
-	}).when('/employee', {
-		templateUrl: 'resources/employee.html',
-	}).when('/payslips', {
-		templateUrl: 'resources/payslips.html',
-	}).when('/createEmployee', {
-		templateUrl: 'resources/createEmployee.html',
+		templateUrl: 'Resources/login.html'
+	}).when('/register', {
+		templateUrl: 'Resources/register.html',
+	}).when('/about', {
+		templateUrl: 'resources/about.html',
+	}).when('/contact', {
+		templateUrl: 'resources/contact.html',
 	}).when('/viewEmployee', {
 		templateUrl: 'resources/viewEmployeeList.html',
 	}).when('/updateEmployee', {
