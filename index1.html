@@ -1,0 +1,54 @@
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!--  <script src="jquery.js"></script> -->
+  <!--   <script src="bootstrap.min.js"></script> -->
+  <!--  <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <title>index</title> -->
+    <style>
+
+     nav{
+       display: flex;
+       height: 10%;
+       justify-content: space-evenly;
+       align-items: center;
+       background-color: #e0dbdb;
+       border-radius: 2px;
+       box-shadow: 0px 2px 1px;
+     }
+     a{
+       padding-top: 2%;
+       padding-bottom: 2%;
+       padding-left: 3px;
+       padding-right: 3px;
+     }
+     a:hover{
+       background-color:white;
+
+     }
+    </style>
+
+
+  </head>
+  <body ng-app="myApp" ng-controller="MainController">
+
+    <nav>
+
+
+      <a href="#/home">Home</a>
+      <a href="#/login">Login</a>
+      <a href="#register">Register</a>
+      <a href="#/about">About Us</a>
+      <a href="#/contact">Contact Us</a>
+
+
+</nav>
+<div ng-view></div>
+
+  </body>
+
+</html>

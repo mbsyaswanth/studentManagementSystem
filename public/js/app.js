@@ -6,8 +6,12 @@ app.config(function($routeProvider) {
 		templateUrl: 'Resources/home.html'
 	}).when('/home', {
 		templateUrl: 'Resources/home.html'
+	}).when('/index1', {
+		templateUrl: 'Resources/index1.html'
 	}).when('/login', {
-		templateUrl: 'Resources/login.html'
+		templateUrl: 'Resources/login.html',
+		controller:'MainController',
+		controllerAs:'login'
 	}).when('/register', {
 		templateUrl: 'Resources/register.html',
 	}).when('/about', {
@@ -20,8 +24,11 @@ app.config(function($routeProvider) {
 		templateUrl: 'resources/updateEmployee.html',
 	});
 });
-app.controller("MainController",['$scope',function($scope){
+app.controller("MainController",function($http){
+	console.log("testing controller");
+  this.test=function(data) {
+  	//console.log("this is working");
+		$http.post('/login',this.data);
+  };
 
-
-
-}]);
+});
