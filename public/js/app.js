@@ -24,11 +24,28 @@ app.config(function($routeProvider) {
 		templateUrl: 'resources/updateEmployee.html',
 	});
 });
-app.controller("MainController",function($http){
+app.controller("MainController",function($http,$location,$timeout){
 	console.log("testing controller");
+	var scope=this;
   this.test=function(data) {
+		scope.load=true;
   	//console.log("this is working");
-		$http.post('/login',this.data);
+		$http.post('/login',this.data).then(function(data) {
+			if(data.data.success){
+			scope.msg = data.data.message;
+			scope.success=true;
+       scope.load=false;
+			 $timeout(function () {
+			 	$location.url('/');
+			}, 1000);
+
+		  }
+			else {
+				scope.success=true;
+				scope.msg=data.data.message;
+        scope.load=false;
+			}
+		});
   };
 
 });

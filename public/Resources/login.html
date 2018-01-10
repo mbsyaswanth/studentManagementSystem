@@ -1,18 +1,22 @@
-<center><h1>Login Page</h1></center><hr/>
+<h1>Login Page</h1><hr/>
 
     <form ng-submit="login.test(data);">
-   <table>
-     <tr>
-      <th>Login</th><br/>
-    </tr>
-    <tr>
-      <td>Username:</td><td><input id="10" type="text" name="username" required ng-model="login.data.username"></td><br/>
-    </tr>
-    <tr>
-       <td>Password:</td><td><input id="11" type="password" name="password" required ng-model="login.data.password"></td><br/>
-    </tr>
-    <tr>
-      <td><input type="submit" name="submit" value="submit"></td>
-    </tr>
-   </table>
+   <div class="form-group">
+
+      <h2>Login</h2><br/>
+
+
+      Username:<input id="10" type="text" name="username" class="form-control" required ng-model="login.data.username"  placeholder="Enter username here"><br/>
+
+
+       Password:<input id="11" type="password" name="password" class="form-control" required ng-model="login.data.password" placeholder="Enter password here"><br/>
+       <input type="submit" name="submit" value="submit" >
+
+  </div>
+  <div class="alert alert-primary ng-binding" ng-show="login.success">
+     {{login.msg}}
+  </div>
+  <div class="loading  ng-binding" ng-show="login.load">
+   Loading....<span class="fa fa-repeat fa-spin"></span>
+  </div>
  </form>
