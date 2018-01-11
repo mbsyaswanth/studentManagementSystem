@@ -1,6 +1,7 @@
 
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	  <link rel="stylesheet" href="css/register.css" >
@@ -14,7 +15,10 @@
   </head>
   <body ng-app="myApp" ng-controller="MainController">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-    <ul class="navbar-nav">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#data">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <ul class="navbar-nav" id="data">
       <li class="nav-item"><a class="nav-link" href="#/home">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="#/login">Login</a></li>
       <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
