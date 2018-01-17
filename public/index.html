@@ -14,17 +14,24 @@
 
   </head>
   <body ng-app="myApp" ng-controller="MainController">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#data">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <ul class="navbar-nav" id="data">
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+
+     <div class="nav-btn">
+       <label for="nav-check">
+         <span></span>
+         <span></span>
+         <span></span>
+       </label>
+     </div>
+     <input type="checkbox" id="nav-check">
+    <ul class="navbar-nav nav-links" >
       <li class="nav-item"><a class="nav-link" href="#/home">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="#/login">Login</a></li>
       <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
       <li class="nav-item"><a class="nav-link" href="#/about">About Us</a></li>
       <li class="nav-item"><a class="nav-link" href="#/contact">Contact Us</a></li>
     </ul>
+
 </nav>
 <div class="container1" ng-view></div>
 
